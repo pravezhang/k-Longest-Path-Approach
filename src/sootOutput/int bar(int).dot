@@ -1,0 +1,11 @@
+digraph "int bar(int)" {
+    label="int bar(int)";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @this",];
+    "1" [label="i0 := @parameter0",];
+    "0"->"1";
+    "2" [label="$i1 = i0 + 42",];
+    "1"->"2";
+    "3" [style=filled,fillcolor=lightgray,label="return $i1",];
+    "2"->"3";
+}
